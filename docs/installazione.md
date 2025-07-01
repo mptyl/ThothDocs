@@ -131,3 +131,21 @@ docker ps
 
 Deve comparire una lista come la seguente:
 ![Lista containers](../assets/ps-e.png)
+
+## 4 - Setup del backend
+Il primo comando considte nel creare un utente superuser da utilizzare per accedere al bsckend.
+```bash
+pyton manage.py createsuperuser
+```
+
+Seguire la procedura e creare un utente superuser
+
+```bash
+python manage.py import_groups
+python manage.py import_users
+python manage.py import_all_csv
+```
+
+Con questi due comandi si creano tre gruppi (Admin, Editor, User) e due utenti (marco e maria).
+Inoltre si crea un setup completo con delle configurazioni base funzionanti, associate agli utenti marco e maria, che possono essere usate come template.
+
