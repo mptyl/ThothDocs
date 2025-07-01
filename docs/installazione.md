@@ -133,13 +133,16 @@ Deve comparire una lista come la seguente:
 ![Lista containers](../assets/ps-e.png)
 
 ## 4 - Setup del backend
-Il primo comando considte nel creare un utente superuser da utilizzare per accedere al bsckend.
+### 4.1 - Creazione di un superuser
+Il primo comando crea un utente superuser da utilizzare per accedere al backend.
 ```bash
 pyton manage.py createsuperuser
 ```
 
-Seguire la procedura e creare un utente superuser
+Rispondere alle domande poste da Thoth (in quanto applicazione DJango) e creare un utente superuser.
 
+###  4.2 - Setup iniziale
+Procedere quindi a caricare un setup base completo e considtente da usare come base.
 ```bash
 python manage.py import_groups
 python manage.py import_users
@@ -149,3 +152,4 @@ python manage.py import_all_csv
 Con questi due comandi si creano tre gruppi (Admin, Editor, User) e due utenti (marco e maria).
 Inoltre si crea un setup completo con delle configurazioni base funzionanti, associate agli utenti marco e maria, che possono essere usate come template.
 
+### 4.3 Verifica del funzionamento dell'applicazione
