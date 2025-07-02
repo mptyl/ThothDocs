@@ -132,8 +132,8 @@ docker ps
 Deve comparire una lista come la seguente:
 ![Lista containers](../assets/ps-e.png)
 
-## 4 - Setup del backend
-### 4.1 - Creazione di un superuser
+### 3.2 - Setup del backend
+#### 3.2.1 - Creazione di un superuser
 Il primo comando crea un utente superuser da utilizzare per accedere al backend.
 ```bash
 pyton manage.py createsuperuser
@@ -141,15 +141,34 @@ pyton manage.py createsuperuser
 
 Rispondere alle domande poste da Thoth (in quanto applicazione DJango) e creare un utente superuser.
 
-###  4.2 - Setup iniziale
-Procedere quindi a caricare un setup base completo e considtente da usare come base.
+####  3.2.2 - Setup iniziale
+Procedere quindi a caricare un setup base completo e consistente da usare come base.
 ```bash
 python manage.py import_groups
 python manage.py import_users
-python manage.py import_all_csv
+python manage.py import_all_csv --docker
 ```
 
 Con questi due comandi si creano tre gruppi (Admin, Editor, User) e due utenti (marco e maria).
 Inoltre si crea un setup completo con delle configurazioni base funzionanti, associate agli utenti marco e maria, che possono essere usate come template.
 
-### 4.3 Verifica del funzionamento dell'applicazione
+#### 3,2.3 Verifica del funzionamento dell'applicazione (sotto docker)
+A questo punto è possibilile aprire **http://localhost:8040**, fare login con l'utente definito come superuser e ritrovarsi di fronte a questa form:
+![screenshot-01](../assets/screenshot-01.png)
+
+A questo punto la componente di backend di Thoth è "up and running" su Docker e si può passare al completamento del suo setup, che viene documentata nell'apposita pagina
+
+# 4 - Installazione in locale
+L'installazione in locale è predisposta per essere in modalità Development.
+Ciò è impostato nei parametri DEBUG=True e PROFILE='Dev' presenti nel file .env.template che deve essere copiato in .env e compilato in modo equivalente a quanto previsto al punto 2.4.
+
+
+!!! note "Il setup Django"
+
+    Come si imposta un'applicazione Django è al di fuori dello scope di questa documentazione
+    Andare alla [pagina ufficiale di Django](https://docs.djangoproject.com/en/5.2/howto/deployment/) su questo argomento per ulteriori dettagli
+
+Una volta completato il file .env si può lanciare il server Django con digitare 
+```bash
+python manage.py runserver
+```.                                                                                                                                                                                                                      
