@@ -1,0 +1,1028 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://sitename.example/installazione/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../django_backend/">
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Installazione - Thoth AI Backend Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#installazione-di-thoth" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Thoth AI Backend Documentation" class="md-header__button md-logo" aria-label="Thoth AI Backend Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.163 13.184a2.9 2.9 0 0 0-.678.084 8.74 8.74 0 0 0-6.917-6.445 8 8 0 0 0-.441-.067c.026-.825.064-1.779 1.278-2.636l-.192-.484s-2.37.735-2.639 2.76c-.117-.551-1.22-1.24-1.767-1.371l-.272.438s.724.362.901 1.361a8.74 8.74 0 0 0-6.92 6.44 2.834 2.834 0 1 0-1.362 5.502 2.84 2.84 0 0 0 1.72-.114 8.7 8.7 0 0 0 .92 1.712l2.352-1.585c-.638-.807-1.02-1.988-1.087-3.173-.07-1.294.244-2.576 1.07-3.33 1.702-1.449 3.556-.788 4.713.6h.312c1.16-1.388 3.017-2.048 4.713-.6.825.754 1.14 2.038 1.07 3.33-.065 1.185-.448 2.366-1.087 3.173l2.353 1.585a8.7 8.7 0 0 0 .922-1.712 2.833 2.833 0 0 0 2.082-5.27 2.8 2.8 0 0 0-1.044-.198M2.786 16.848a.836.836 0 0 1 0-1.672.84.84 0 0 1 .469.144q.01.66.09 1.314c-.148.134-.374.233-.559.214m18.427 0a.84.84 0 0 1-.558-.215 13 13 0 0 0 .09-1.314.835.835 0 0 1 1.304.693c.007.457-.383.858-.836.836"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Thoth AI Backend Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Installazione
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="green" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Thoth AI Backend Documentation" class="md-nav__button md-logo" aria-label="Thoth AI Backend Documentation" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.163 13.184a2.9 2.9 0 0 0-.678.084 8.74 8.74 0 0 0-6.917-6.445 8 8 0 0 0-.441-.067c.026-.825.064-1.779 1.278-2.636l-.192-.484s-2.37.735-2.639 2.76c-.117-.551-1.22-1.24-1.767-1.371l-.272.438s.724.362.901 1.361a8.74 8.74 0 0 0-6.92 6.44 2.834 2.834 0 1 0-1.362 5.502 2.84 2.84 0 0 0 1.72-.114 8.7 8.7 0 0 0 .92 1.712l2.352-1.585c-.638-.807-1.02-1.988-1.087-3.173-.07-1.294.244-2.576 1.07-3.33 1.702-1.449 3.556-.788 4.713.6h.312c1.16-1.388 3.017-2.048 4.713-.6.825.754 1.14 2.038 1.07 3.33-.065 1.185-.448 2.366-1.087 3.173l2.353 1.585a8.7 8.7 0 0 0 .922-1.712 2.833 2.833 0 0 0 2.082-5.27 2.8 2.8 0 0 0-1.044-.198M2.786 16.848a.836.836 0 0 1 0-1.672.84.84 0 0 1 .469.144q.01.66.09 1.314c-.148.134-.374.233-.559.214m18.427 0a.84.84 0 0 1-.558-.215 13 13 0 0 0 .09-1.314.835.835 0 0 1 1.304.693c.007.457-.383.858-.836.836"/></svg>
+
+    </a>
+    Thoth AI Backend Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Installazione
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Installazione
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-attivita-preliminare-clonazione-dei-progetti-da-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 - Attività preliminare - clonazione dei progetti da GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-le-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 - Le API Keys
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 - Le API Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-i-servizi-di-generazione-tramite-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 - I servizi di generazione tramite LLM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-il-servizio-logfire" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 - Il servizio Logfire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-il-setup-di-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 - Il setup di Django
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 - Il setup di Django">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-la-generazione-della-django-secret_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.1 - La generazione della Django SECRET_KEY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-la-generazione-della-django_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.2 - La generazione della DJANGO_API_KEY
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-la-generazione-dei-file-env-e-_env" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 - La generazione dei file .env e _env
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-installazione-sotto-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 - Installazione sotto Docker
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 - Installazione sotto Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-procedura-di-setup-di-thoth-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 - Procedura di Setup di Thoth (backend)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 - Procedura di Setup di Thoth (backend)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-impostazione-del-file-_env" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.1 - Impostazione del file _env
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-esecuzione-del-docker-compose-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.2 - Esecuzione del docker-compose up
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-setup-del-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 - Setup del backend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 - Setup del backend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-creazione-di-un-superuser" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.1 - Creazione di un superuser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-setup-iniziale" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.2 - Setup iniziale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-verifica-del-funzionamento-dellapplicazione-sotto-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      3,2.3 Verifica del funzionamento dell'applicazione (sotto docker)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../django_backend/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Django Backend
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../il_preprocessing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Il preprocessing
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../logfire/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Logfire e i llog di Thoth
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    La Roadmap
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-attivita-preliminare-clonazione-dei-progetti-da-github" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 - Attività preliminare - clonazione dei progetti da GitHub
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-le-api-keys" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 - Le API Keys
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2 - Le API Keys">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-i-servizi-di-generazione-tramite-llm" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 - I servizi di generazione tramite LLM
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-il-servizio-logfire" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 - Il servizio Logfire
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-il-setup-di-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 - Il setup di Django
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.3 - Il setup di Django">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#231-la-generazione-della-django-secret_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.1 - La generazione della Django SECRET_KEY
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#232-la-generazione-della-django_api_key" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3.2 - La generazione della DJANGO_API_KEY
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-la-generazione-dei-file-env-e-_env" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 - La generazione dei file .env e _env
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-installazione-sotto-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 - Installazione sotto Docker
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3 - Installazione sotto Docker">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-procedura-di-setup-di-thoth-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1 - Procedura di Setup di Thoth (backend)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.1 - Procedura di Setup di Thoth (backend)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#311-impostazione-del-file-_env" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.1 - Impostazione del file _env
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#312-esecuzione-del-docker-compose-up" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.1.2 - Esecuzione del docker-compose up
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-setup-del-backend" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2 - Setup del backend
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.2 - Setup del backend">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#321-creazione-di-un-superuser" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.1 - Creazione di un superuser
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#322-setup-iniziale" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.2.2 - Setup iniziale
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#323-verifica-del-funzionamento-dellapplicazione-sotto-docker" class="md-nav__link">
+    <span class="md-ellipsis">
+      3,2.3 Verifica del funzionamento dell'applicazione (sotto docker)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="installazione-di-thoth">Installazione di Thoth</h1>
+<p>Thoth offre la possibilità di essere installato sia all'interno di un insieme di container Docker, per un ambiente isolato e facilmente gestibile, sia direttamente sul proprio sistema locale, per un maggiore controllo e personalizzazione.</p>
+<p>L'unico prerequisito è la disponibilità di un ambiente Python 3.12 o superiore.
+mkdocs-</p>
+<div class="admonition note">
+<p class="admonition-title">Installazione di Python</p>
+<p>Le procedure di installazione di Python sono al di fuori dello scope di questo documento.
+Andare sul sito di <a href="https://www.python.org/">Python</a> per installarlo, o aggiornarlo, se non lo avete già fatto.</p>
+</div>
+<h2 id="1-attivita-preliminare-clonazione-dei-progetti-da-github">1 - Attività preliminare - clonazione dei progetti da GitHub</h2>
+<p>Prima di tutto, ovviamente, occorre clonare da GitHub i repository del backend (Thoth) e del frontend (ThothSL). </p>
+<p>Da linea di comando posizionarsi dove si preferisce, creare una directory, ad esempio ThothApp, ed entrarci:
+   <div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>ThothApp<span class="w"> </span><span class="c1"># o altro nome a vostra scelta</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nb">cd</span><span class="w"> </span>ThothApp
+</span></code></pre></div></p>
+<p>Una volta entrati nella directory, che farà da root a tutta l'applicazione, clonare da GitHub i progetti di backend (Thoth) e di frontend (ThothSL)</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mptyl/Thoth.git<span class="w"> </span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/mptyl/ThothSL.git<span class="w"> </span>
+</span></code></pre></div>
+<h2 id="2-le-api-keys">2 - Le API Keys</h2>
+<p>Prima di proseguire con l'installazione, è necessario dotarsi delle API Keys per:</p>
+<ul>
+<li>i servizi LLM che verranno utilizzerati all'interno del processo Thoth per generare un SQL a partire da un testo.</li>
+<li>il servizio di logging Logfire</li>
+<li>una corretta gestione del backend basato su Django</li>
+</ul>
+<h3 id="21-i-servizi-di-generazione-tramite-llm">2.1 - I servizi di generazione tramite LLM</h3>
+<p>La generazione di un SQL a partire da un testo non può prescindere dall'utilizzo di un LLM.<br />
+Thoth è predisposto per potersi collegare a seguenti fornitori di API:</p>
+<div class="language-text highlight"><pre><span></span><code>* OpenAI 
+* Gemini (di Google)
+* Anthropic 
+* Mistral
+* Codestral (di Mistral)
+* DeepSeek
+* Ollama
+* OpenRouter
+</code></pre></div>
+<p>Ogni fornitore di API, a sua volta, permette di usare diversi modelli, che andranno specificati nel setup dell'applicazione.</p>
+<p>In fase di configurazione occorre stabilire quali provider si desidera utilizzare.  Per ognuno di essi, è necessario procurarsi un'API Key.
+Se si utilizza Ollama in locale, ovviamente, non è necessaria alcuna API Key, ma solo indicare l'IP del server Ollama utilizzato. </p>
+<p>Per procurarsi l'API Key seguite le procedure previste dal provider.</p>
+<div class="admonition note">
+<p class="admonition-title">Assegnazione di una API Key</p>
+<p>Le procedure di assegnazione di una API Key sono più o meno le stesse per ogni fornitore. 
+Creare delle API Key dal nome Thoth, o simile, per ogni fornitore che si desidera utilizzare. In seguita si vedrà dove dovranno essere utilizzate.</p>
+</div>
+<p>Se si usa OpenRouter, con una sola API Key si potrà accedere ad una lunga lista di LLM, aventi dimensioni e costo molto vario (alcuni modelli sono resi disponibili addirittura gratuitamente). Andare sul sito di <a href="https://openrouter.ai/">OpenRouter</a> per ulteriori dettagli. Tramite <code>OpenRouter</code> si possono utlizzare modelli di provider non previsti dalla lista precedente, in quanto OpenRouter provvede ad esporre sempre una interfaccia compatibile con OpenAI utilizzabile per tutti i modelli che supporta.  </p>
+<p>I valori di default che sono impostati in Thoth prevedono che tutti gli Agent che svolgono le varie fasi del processo usino LLM forniti da OpenRouter. </p>
+<p>L'utente può ovviamente cambiare questo setup - si vedrà più avanti come - ma, se si vuole provare rapidamente Thoth, l'ideale è iniziare con l'acquistare 5 o 10 Dollari di servizi OpenRouter e lasciare le impostazioni di default che vengono impostate in fase di installazione. </p>
+<p>Dai nostri test, utilizzando la configurazione di default, ogni interrogazione ha un costo variante tra 1 e 2 centesimi di Dollaro, per cui, con una decina di Dollari, si possono fare circa 700 interrogazioni.</p>
+<h3 id="22-il-servizio-logfire">2.2 - Il servizio Logfire</h3>
+<p><a href="https://pydantic.dev/logfire">Logfire</a> è un servizio messo a disposizione da Pydantic per tracciare l'attività di applicazioni Python. Fino a 10 milioni di messaggi al mese è un servizio gratuito.  </p>
+<p>Thoth produce un log delle sue attività contemporaneamente su console e su Logfire. Il log su Logfire persiste per circa 30 giorni e fornisce un elevato livello di dettaglio sulle operazioni registrate.</p>
+<p>E' necessario quindi andare su Logfire e createvi una API Key gratuita</p>
+<div class="admonition note">
+<p class="admonition-title">Il logging di un LLM</p>
+<p>Loggare le attività effettuate da un LLM è un'attività piuttosto complessa. Con Logfire si può facilmente verificare il testo del prompt ricevuto dal LLM, l'eventuale attivazione di Tools da parte degll'Agent in esecuzione e l'output generato, con abbondanza di dettagli.</p>
+</div>
+<h3 id="23-il-setup-di-django">2.3 - Il setup di Django</h3>
+<p>L'applcazione Thoth è basata su Django. Il setup di Django richiede che vengano generate due Key da impostare nel file di configurazione _env (per docker) o .env (per l'uso in locale)</p>
+<h4 id="231-la-generazione-della-django-secret_key">2.3.1 - La generazione della Django SECRET_KEY</h4>
+<p>La SECRET_KEY di Django è una componente fondamentale per la sicurezza dell’applicazione web. Serve principalmente a:</p>
+<div class="language-text highlight"><pre><span></span><code>* Fornire firme crittografiche per proteggere dati e sessioni da manomissioni.
+* Proteggere contro attacchi CSRF (Cross-Site Request Forgery) generando token unici per ogni sessione utente.
+* Firmare e verificare i cookie di sessione, assicurando che i dati di sessione non vengano alterati da terzi.
+* Contribuire alla generazione di hash sicuri per le password, aumentando la sicurezza degli account utente.
+* 
+Creare firme digitali per autenticare dati come token di autenticazione o parametri URL.
+</code></pre></div>
+<p>Per generare una nuova SECRET_KEY Django si può utilizzare il generatore online https://djecrety.ir/</p>
+<h4 id="232-la-generazione-della-django_api_key">2.3.2 - La generazione della DJANGO_API_KEY</h4>
+<p>Per generare una chiave API sicura, da usare nella comunicazione tra frontend e backend, utilizzare questo piccolo snippet Python:
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>python3<span class="w"> </span>-c<span class="w"> </span><span class="s2">&quot;import secrets; print(secrets.token_urlsafe(32))&quot;</span>
+</span></code></pre></div></p>
+<h3 id="24-la-generazione-dei-file-env-e-_env">2.4 - La generazione dei file .env e _env</h3>
+<p>Una volta che si è in possesso delle chiavi degli LLM che si intendono utilizzare, della API KEY di Logfire e delle Key necessarie per lavorare con Django si può procedere a creare i file:</p>
+<ul>
+<li><strong>_env</strong> - per il deploy sotto Docker  oppure </li>
+<li><strong>.env</strong> per il deploy il locale.</li>
+</ul>
+<h2 id="3-installazione-sotto-docker">3 - Installazione sotto Docker</h2>
+<p>L'installazione più semplice è quella che può essere effettuata utilizzando Docker. </p>
+<div class="admonition note">
+<p class="admonition-title">Installazione di Docker</p>
+<p>L'installazione e la configurazione di Docker sono attività al di fuori dello scope di questo documento.
+Eventualmente seguire li istruzioni per <a href="https://docs.docker.com/engine/install/">Installare Docker sul vostro sistema</a></p>
+</div>
+<p>Dando per scontato che Docker sia installato e funzionante, queste sono le azioni da eseguire per installare Thoth sotto Docker</p>
+<h3 id="31-procedura-di-setup-di-thoth-backend">3.1 - Procedura di Setup di Thoth (backend)</h3>
+<p>Il setup di Thoth sotto Docker prevede le seguenti azioni:</p>
+<h4 id="311-impostazione-del-file-_env">3.1.1 - Impostazione del file _env</h4>
+<p>Per prima cosa è necessario creare il file _env da inserire nella directory Thoth. Per farlo si deve:  </p>
+<div class="language-text highlight"><pre><span></span><code>1. copiare il file _env.template in _env
+2. aprire con un editor qualunque il file _env e riempire i placeholder delle API key degli LLM che intendete utilizzare
+3. inserire la chiavi SECRET_KEY e DJANGO_API_KEY appena generate negli appositi placeholder
+</code></pre></div>
+<h4 id="312-esecuzione-del-docker-compose-up">3.1.2 - Esecuzione del docker-compose up</h4>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>docker-compose<span class="w"> </span>up<span class="w"> </span>--build<span class="w"> </span>-d
+</span></code></pre></div>
+<p>Una volta eseguito il docker-compose up verificare che i processi siano correttamente funzionanti con.</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>docker<span class="w"> </span>ps
+</span></code></pre></div>
+<p>Deve comparire una lista come la seguente:
+<img alt="Lista containers" src="../assets/ps-e.png" /></p>
+<h3 id="32-setup-del-backend">3.2 - Setup del backend</h3>
+<h4 id="321-creazione-di-un-superuser">3.2.1 - Creazione di un superuser</h4>
+<p>Il primo comando crea un utente superuser da utilizzare per accedere al backend.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>createsuperuser
+</span></code></pre></div></p>
+<p>Rispondere alle domande poste da Thoth (in quanto applicazione DJango) e creare un utente superuser.</p>
+<h4 id="322-setup-iniziale">3.2.2 - Setup iniziale</h4>
+<p>Procedere quindi a caricare un setup base completo e consistente da usare come base.
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>import_groups
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>import_users
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>python<span class="w"> </span>manage.py<span class="w"> </span>import_all_csv<span class="w"> </span>--docker
+</span></code></pre></div></p>
+<p>Con questi due comandi si creano tre gruppi (Admin, Editor, User) e due utenti (marco e maria).
+Inoltre si crea un setup completo con delle configurazioni base funzionanti, associate agli utenti marco e maria, che possono essere usate come template.</p>
+<h4 id="323-verifica-del-funzionamento-dellapplicazione-sotto-docker">3,2.3 Verifica del funzionamento dell'applicazione (sotto docker)</h4>
+<p>A questo punto è possibilile aprire <strong>http://localhost:8040</strong>, fare login con l'utente definito come superuser e ritrovarsi di fronte a questa form:
+<img alt="screenshot-01" src="../assets/screenshot-01.png" /></p>
+<p>A questo punto la componente di backend di Thoth è "up and running" su Docker e si può passare al completamento del suo setup, che viene documentata nell'apposita pagina</p>
+<h1 id="4-installazione-in-locale">4 - Installazione in locale</h1>
+<p>L'installazione in locale è predisposta per essere in modalità Development.
+Ciò è impostato nei parametri DEBUG=True e PROFILE='Dev' presenti nel file .env.template che deve essere copiato in .env e compilato in modo equivalente a quanto previsto al punto 2.4.</p>
+<div class="admonition note">
+<p class="admonition-title">Il setup Django</p>
+<p>Come si imposta un'applicazione Django è al di fuori dello scope di questa documentazione
+Andare alla <a href="https://docs.djangoproject.com/en/5.2/howto/deployment/">pagina ufficiale di Django</a> su questo argomento per ulteriori dettagli</p>
+</div>
+<h2 id="41-impostazione-del-file-env">4.1 - Impostazione del file .env</h2>
+<p>Copiare .env.template in .env e compilare i placeholder necessari. 
+Devono essere necessariamente inserite le key di Django (SECRET_KEY e DJANGO_API_KEY), la key di Logfire ed almeno un provider LLM</p>
+<h2 id="42-creazione-ambiente-virtuale">4.2 - Creazione ambiente virtuale</h2>
+<p>a questo punto si deve impostare un ambiente python con 
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+</span></code></pre></div></p>
+<h2 id="43-installazione-package-necessari">4.3 - Installazione package necessari</h2>
+<p>e installare tutti i package necessari
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
+</span></code></pre></div></p>
+<h2 id="44-migrazione-database">4.4 - Migrazione database</h2>
+<p>Infine vanno fatte le migrazioni necessarie per aggiornare il database di Django
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
+</span></code></pre></div></p>
+<h2 id="45-run-del-server">4.5 - Run del server</h2>
+<p>Una volta completato il setup base si può lanciare il server Django digitando
+<code>bash
+python manage.py runserver</code>.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Marco Pancotti
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://youtube.com/@tylconsulting" target="_blank" rel="noopener" title="youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.linkedin.com/in/marcopancotti" target="_blank" rel="noopener" title="www.linkedin.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3M135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5m282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
