@@ -1,10 +1,15 @@
-# Installazione di Thoth 
+# Installazione di Thoth
+Thoth offre la possibilità di essere installato sia all'interno di un insieme di container Docker, per un ambiente isolato e facilmente gestibile, sia direttamente sul proprio sistema locale, per un maggiore controllo e personalizzazione.
 
-Thoth si può installare in un gruppo di container Docker o in locale.
+L'unico prerequisito è la disponibilità di un ambiente Python 3.12 o superiore.
+mkdocs-
+!!! note "Installazione di Python"
+
+    Le procedure di installazione di Python sono al di fuori dello scope di questo documento.
+    Andare sul sito di [Python](https://www.python.org/) per installarlo, o aggiornarlo, se non lo avete già fatto.
 
 ## 1 - Attività preliminare - clonazione dei progetti da GitHub
-
-Prima di tutto, ovviamente, occorre clonare da GitHub i due repository. 
+Prima di tutto, ovviamente, occorre clonare da GitHub i repository del backend (Thoth) e del frontend (ThothSL). 
 
 Da linea di comando posizionarsi dove si preferisce, creare una directory, ad esempio ThothApp, ed entrarci:
    ```bash
@@ -136,7 +141,7 @@ Deve comparire una lista come la seguente:
 #### 3.2.1 - Creazione di un superuser
 Il primo comando crea un utente superuser da utilizzare per accedere al backend.
 ```bash
-pyton manage.py createsuperuser
+python manage.py createsuperuser
 ```
 
 Rispondere alle domande poste da Thoth (in quanto applicazione DJango) e creare un utente superuser.
@@ -168,7 +173,31 @@ Ciò è impostato nei parametri DEBUG=True e PROFILE='Dev' presenti nel file .en
     Come si imposta un'applicazione Django è al di fuori dello scope di questa documentazione
     Andare alla [pagina ufficiale di Django](https://docs.djangoproject.com/en/5.2/howto/deployment/) su questo argomento per ulteriori dettagli
 
-Una volta completato il file .env si può lanciare il server Django con digitare 
+## 4.1 - Impostazione del file .env
+Copiare .env.template in .env e compilare i placeholder necessari. 
+Devono essere necessariamente inserite le key di Django (SECRET_KEY e DJANGO_API_KEY), la key di Logfire ed almeno un provider LLM
+
+## 4.2 - Creazione ambiente virtuale
+a questo punto si deve impostare un ambiente python con 
+``` bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+## 4.3 - Installazione package necessari
+e installare tutti i package necessari
+```bash
+pip install -r requirements.txt
+```
+
+## 4.4 - Migrazione database
+Infine vanno fatte le migrazioni necessarie per aggiornare il database di Django
+```bash
+python manage.py migrate
+```
+
+## 4.5 - Run del server
+Una volta completato il setup base si può lanciare il server Django digitando
 ```bash
 python manage.py runserver
-```.                                                                                                                                                                                                                      
+```.
