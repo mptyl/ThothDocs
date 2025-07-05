@@ -1,1 +1,0 @@
-# Completamento del Setup
