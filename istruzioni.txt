@@ -1,14 +1,16 @@
-Il tuo obiettivo e scrivere il testo, in Italiano, della pagina di documentazione ai_models.md.
-Si tratta dei modelli LLM effettivamente utilizzati in Thoth. 
+Il tuo obiettivo e scrivere il testo, in Italiano, della pagine di documentazione che stanno sotto Sql database e che fanno riferimento agli omonimi models e admin form
+Si tratta degli elementi che costituiscono i metdati dei dtabase da interrogare
 
-Per elaborare il contenuto determina:
-- guarda com'è organizzato model base fatte in Thoth
+Per elaborare il contenuto:
+- guarda com'è organizzato il model base in Thoth
+- guarda come gli questi model sono utilizzati in ThothSL
 - spiega il contenuto dei vari campi
 - evidenzia le relazioni previste dal model
 - spiega quali sono le informazioni gestite dal form di admin associato model
 
 Per assolvere il tuo compito esamina i sorgenti presenti nelle seguenti directory:
 - /Users/mp/DjangoExperimental/Thoth
+- /Users/mp/PythonProjects/ThothSL
 
 Il testo devi essere strutturati in capitoli e sottocapitoli. A parte il primo titolo (singolo #), tutti gli capitoli devono essere numerati secondo il format 1,1.1,1.2,...2, 2.1 ecc. Dopo il numero deve essere messo un ' - ' a cui far sguire il testo della sezione
 Devi produrre il testo di uno User Manual, per non entrare in dettagli su classi, funzioni, variabili, ecc. 

@@ -37,14 +37,21 @@ nav:
     - AI Models and Agents:
       - AI Models: setup/ai_models.md
       - Agents: setup/agents.md
-  - Django Backend: django_backend.md
+      - Group Profiles: setup/group_profiles.md
+    - SQL Database:
+      - SQL Database: setup/sql_database.md
+      - SQL Database Tables: setup/sql_database_tables.md
+      - SQL Database Columns: setup/sql_database_columns.md
+      - Relationships: setup/relationships.md
   - Il preprocessing: 
     - Hints: preprocessing/hints.md
     - Questions: preprocessing/questions.md
     - Update Columns Description: preprocessing/update_columns_description.md
     - Run Preprocessing: preprocessing/run_preprocessing.md
-  - Logfire e i llog di Thoth: logfire.md
-  - La Roadmap: roadmap.md
+  - Il logging:
+    - Logfire: logging/logfire.md
+    - Log management: logging/log_management.md
+  - La Roadmap di Thoth: roadmap.md
 
 markdown_extensions:
   - attr_list
