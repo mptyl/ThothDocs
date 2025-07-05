@@ -30,10 +30,19 @@ nav:
     - Installazione su Docker: install/docker.md
     - Installazione in locale: install/local.md
   - Setup:
-    - Completamento setup backend: setup/backend_setup.md
-    - Completamento setup frontend: setup/frontend_setup.md
+    - Authentication:
+      - Groups: setup/authentication/groups.md
+      - Groups Permissions: setup/authentication/groups_permissions.md
+      - Users: setup/authentication/users.md
+    - AI Models and Agents:
+      - AI Models: setup/ai_models.md
+      - Agents: setup/agents.md
   - Django Backend: django_backend.md
-  - Il preprocessing: il_preprocessing.md
+  - Il preprocessing: 
+    - Hints: preprocessing/hints.md
+    - Questions: preprocessing/questions.md
+    - Update Columns Description: preprocessing/update_columns_description.md
+    - Run Preprocessing: preprocessing/run_preprocessing.md
   - Logfire e i llog di Thoth: logfire.md
   - La Roadmap: roadmap.md
 
