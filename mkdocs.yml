@@ -30,18 +30,19 @@ nav:
     - Installazione su Docker: install/docker.md
     - Installazione in locale: install/local.md
   - Setup:
-    - Authentication:
+    -  Il processo di setup: setup/setup_process.md
+    - L'Authentication:
       - Groups: setup/authentication/groups.md
-      - Groups Profiles: setup/authentication/group_profiles.md
+      - Group profiles: setup/authentication/group_profiles.md
       - Users: setup/authentication/users.md
-    - AI Models and Agents:
-      - Basic AI models: setup/AI_models_and_agents/basic_ai_models
-      - AI Models: setup/AI_models_and_agents/ai_models.md
+    - Gli AI Models e gli Agenti:
+      - Basic ai models: setup/AI_models_and_agents/basic_ai_models
+      - Ai Models: setup/AI_models_and_agents/ai_models.md
       - Agents: setup/AI_model_and_agents//agents.md
-    - SQL Database:
-      - SQL Database: setup/Sql_database/sql_dbs.md
-      - SQL Database Tables: setup/Sql_database/sql_tables.md
-      - SQL Database Columns: setup/Sql_database//sql_columns.md
+    - I Database relazionali:
+      - Sql dbs: setup/Sql_database/sql_dbs.md
+      - Sql tables: setup/Sql_database/sql_tables.md
+      - Sql columns: setup/Sql_database//sql_columns.md
       - Relationships: setup/Sql_database/relationships.md
   - Il preprocessing: 
     - Hints: preprocessing/hints.md

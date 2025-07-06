@@ -1,0 +1,13 @@
+Il tuo obiettivo e scrivere il testo, in Italiano, della pagina sql_dbs.md in Sql_database
+Oltre al testo attuale va aggiunta una spiegazione di tutte le action previste
+
+Per elaborare il contenuto:
+- guarda com'è organizzato il model base in Thoth
+- spiega quali sono le informazioni gestite dal form di admin dell'associato model con particolare attenzione alle action
+
+Per assolvere il tuo compito esamina i sorgenti presenti nelle seguenti directory:
+- /Users/mp/DjangoExperimental/Thoth
+
+Il testo devi essere strutturati in capitoli e sottocapitoli. A parte il primo titolo (singolo #), tutti gli capitoli devono essere numerati secondo il format 1,1.1,1.2,...2, 2.1 ecc. Dopo il numero deve essere messo un ' - ' a cui far sguire il testo della sezione
+Devi produrre il testo di uno User Manual, per non entrare in dettagli su classi, funzioni, variabili, ecc. 
+Concentrati sulle funzionalità e gli scopi

@@ -28,9 +28,10 @@ Dall'interfaccia di admin, gli utenti possono selezionare le tabelle e le colonn
 ### 2.2 - Generazione Basata su Contesto
 
 Una volta selezionati gli elementi, Thoth invia una richiesta al modello AI per generare commenti. Il sistema considera:
-- Eventuali descrizioni già esistenti, per mantenere la coerenza.
-- Il nome del campo, che spesso fornisce indizi sul suo scopo.
-- Un set di dati campione contenuto nel campo (se non si tratta di un ID), per dedurre il tipo di informazioni memorizzate.
+
+    - Eventuali descrizioni già esistenti, per mantenere la coerenza.
+    - Il nome del campo, che spesso fornisce indizi sul suo scopo.
+    - Un set di dati campione contenuto nel campo (se non si tratta di un ID), per dedurre il tipo di informazioni memorizzate.
 
 Questo approccio garantisce che i commenti generati siano pertinenti e utili, anche in assenza di documentazione preesistente.
 
@@ -61,6 +62,7 @@ Quando le descrizioni degli elementi del database vengono aggiornate, è importa
 ### 4.1 - Soluzione per l'Aggiornamento delle Descrizioni dello Schema
 
 Per affrontare questa limitazione, gli utenti possono seguire un processo specifico:
+
     1. Scaricare i file CSV contenenti i dettagli delle tabelle e delle colonne dal sistema.
     2. Utilizzare un tool dedicato progettato per trasferire le descrizioni aggiornate dai file CSV allo schema del database.
 
