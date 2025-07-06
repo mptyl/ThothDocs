@@ -61,8 +61,8 @@ Quando le descrizioni degli elementi del database vengono aggiornate, è importa
 ### 4.1 - Soluzione per l'Aggiornamento delle Descrizioni dello Schema
 
 Per affrontare questa limitazione, gli utenti possono seguire un processo specifico:
-1. Scaricare i file CSV contenenti i dettagli delle tabelle e delle colonne dal sistema.
-2. Utilizzare un tool dedicato progettato per trasferire le descrizioni aggiornate dai file CSV allo schema del database.
+    1. Scaricare i file CSV contenenti i dettagli delle tabelle e delle colonne dal sistema.
+    2. Utilizzare un tool dedicato progettato per trasferire le descrizioni aggiornate dai file CSV allo schema del database.
 
 Questo approccio consente la sincronizzazione manuale delle descrizioni con lo schema senza alterare direttamente il DDL.
 
