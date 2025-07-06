@@ -32,17 +32,17 @@ nav:
   - Setup:
     - Authentication:
       - Groups: setup/authentication/groups.md
-      - Groups Permissions: setup/authentication/groups_permissions.md
+      - Groups Profiles: setup/authentication/group_profiles.md
       - Users: setup/authentication/users.md
     - AI Models and Agents:
-      - AI Models: setup/ai_models.md
-      - Agents: setup/agents.md
-      - Group Profiles: setup/group_profiles.md
+      - Basic AI models: setup/AI_models_and_agents/basic_ai_models
+      - AI Models: setup/AI_models_and_agents/ai_models.md
+      - Agents: setup/AI_model_and_agents//agents.md
     - SQL Database:
-      - SQL Database: setup/sql_database.md
-      - SQL Database Tables: setup/sql_database_tables.md
-      - SQL Database Columns: setup/sql_database_columns.md
-      - Relationships: setup/relationships.md
+      - SQL Database: setup/Sql_database/sql_dbs.md
+      - SQL Database Tables: setup/Sql_database/sql_tables.md
+      - SQL Database Columns: setup/Sql_database//sql_columns.md
+      - Relationships: setup/Sql_database/relationships.md
   - Il preprocessing: 
     - Hints: preprocessing/hints.md
     - Questions: preprocessing/questions.md
@@ -51,6 +51,9 @@ nav:
   - Il logging:
     - Logfire: logging/logfire.md
     - Log management: logging/log_management.md
+  - I commenti : comments.md
+  - Gli hints: hints.md
+  - Le questions: questions.md
   - La Roadmap di Thoth: roadmap.md
 
 markdown_extensions:

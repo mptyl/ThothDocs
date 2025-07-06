@@ -10,14 +10,10 @@ In pratica quello che succede è che ogni volta che una domanda viene posta a Th
 estratti alcuni hints e alcune question "simili" o "pertinenti" alla domanda fatta e che queste informazioni vengono fornite come contesto all'agente
 che genera l'SQL. 
 
-In particolare le question. vengono fornite come delle "few shots" all'interno del prompt di generazione del SQL, come aiuto alla sua attività
+In particolare le question vengono fornite come delle "few shots" all'interno del prompt di generazione del SQL, come aiuto alla sua attività
 
 Per elaborare il contenuto:
-- guarda com'è organizzato il model base in Thoth
-- guarda come gli questi model sono utilizzati in ThothSL
-- spiega il contenuto dei vari campi
-- evidenzia le relazioni previste dal model
-- spiega quali sono le informazioni gestite dal form di admin associato model
+- guarda come sono utilizzate le question in ThothSL
 
 Per assolvere il tuo compito esamina i sorgenti presenti nelle seguenti directory:
 - /Users/mp/DjangoExperimental/Thoth

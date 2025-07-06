@@ -1,0 +1,23 @@
+Il tuo obiettivo e scrivere il testo, in Italiano, della pagina hints.md
+Gli hints sono dei testi conservati nel database vettoriale composta da un unico elemento:
+un testo che spiega termini complessi o suggerisce interpretazioni non intuitive, 
+che aiutano ad associare concetti espressi nel testo che sta all'origine del processo text-to-SQL con lo schema del database
+
+In pratica quello che succede è che ogni volta che una domanda viene posta a Thoth, nelle fasi preliminari del processo di generazione del SQL vengono
+estratti alcuni hints  "simili" o "pertinenti" alla domanda fatta e che questi hints vengono forniti come contesto all'agente
+che genera l'SQL. 
+
+Spiega inoltre come gli hints possano essere caricati nel database vettoriale a partire da un file dev.json fornito all'interno del framework BIRD
+Leggi la spiegazione da istruzioni_questions.txt su dev.json per ispirati su questo tem.
+
+Per elaborare il contenuto:
+- guarda come sono utilizzate gli hints in ThothSL
+- guarda come sono generati nel preprocessing e nella UI CRUD di thoth
+
+Per assolvere il tuo compito esamina i sorgenti presenti nelle seguenti directory:
+- /Users/mp/DjangoExperimental/Thoth
+- /Users/mp/PythonProjects/ThothSL
+
+Il testo devi essere strutturati in capitoli e sottocapitoli. A parte il primo titolo (singolo #), tutti gli capitoli devono essere numerati secondo il format 1,1.1,1.2,...2, 2.1 ecc. Dopo il numero deve essere messo un ' - ' a cui far sguire il testo della sezione
+Devi produrre il testo di uno User Manual, per non entrare in dettagli su classi, funzioni, variabili, ecc. 
+Concentrati sulle funzionalità e gli scopi
