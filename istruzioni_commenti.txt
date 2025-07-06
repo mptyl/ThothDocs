@@ -1,0 +1,22 @@
+Il tuo obiettivo e scrivere il testo, in Italiano, della pagina comments.md
+I comments sono dei testi da inserire negli appositi campi di tables (SqlTable) e colonne (SqlColumn)
+Spesso i database in produzione hanno molti campi privi di una descrizione, 
+oppure con descrizione incomprensibile, piena di sigle, scritta in linguaggi diversi da quello principale. 
+
+Thoth permette di generare le descrizioni di tables e columns utilizzando l'AI in questo modo:
+- dall'interfaccia di admin, selezionare le table e le columns per cui si vogliono generare i commenti
+- tramite l'apposita action inviare una richiesta al modello di AI di generare un commento che si basi sull'eventuale descrizione già esistente, sul nome del campo e su un set di dati contenuto nel campo, se questo non è un id.
+- sempre dall'interfaccia di admin, selezionare le table e le columns per cui si vuole generare una descrizione a partire da un commento
+
+Prima di consolidare il commento nella descrizione spesso è necessario un completamento fatto da un operatore esperto, che conosce bene il database e complete le inevitabili mancanze dell'AI
+
+Per elaborare il contenuto:
+- guarda come sono utilizzate gestiti i commenti in Thoth
+
+Per assolvere il tuo compito esamina i sorgenti presenti nelle seguenti directory:
+- /Users/mp/DjangoExperimental/Thoth
+- /Users/mp/PythonProjects/ThothSL
+
+Il testo devi essere strutturati in capitoli e sottocapitoli. A parte il primo titolo (singolo #), tutti gli capitoli devono essere numerati secondo il format 1,1.1,1.2,...2, 2.1 ecc. Dopo il numero deve essere messo un ' - ' a cui far sguire il testo della sezione
+Devi produrre il testo di uno User Manual, per non entrare in dettagli su classi, funzioni, variabili, ecc. 
+Concentrati sulle funzionalità e gli scopi
