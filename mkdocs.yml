@@ -25,6 +25,7 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
+  - Workflow: workflow.md
   - Installazione: 
     - Acquisizione sorgenti: install/sources_cloning.md
     - Installazione su Docker: install/docker.md
