@@ -25,38 +25,54 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
-  - Workflow: workflow.md
-  - Installazione: 
-    - Acquisizione sorgenti: install/sources_cloning.md
-    - Installazione su Docker: install/docker.md
-    - Installazione in locale: install/local.md
-  - Setup:
-    -  Il processo di setup: setup/setup_process.md
-    - L'Authentication:
-      - Groups: setup/authentication/groups.md
-      - Group profiles: setup/authentication/group_profiles.md
-      - Users: setup/authentication/users.md
-    - Gli AI Models e gli Agenti:
-      - Basic ai models: setup/AI_models_and_agents/basic_ai_models
-      - Ai Models: setup/AI_models_and_agents/ai_models.md
-      - Agents: setup/AI_model_and_agents//agents.md
-    - I Database relazionali:
-      - Sql dbs: setup/Sql_database/sql_dbs.md
-      - Sql tables: setup/Sql_database/sql_tables.md
-      - Sql columns: setup/Sql_database//sql_columns.md
-      - Relationships: setup/Sql_database/relationships.md
-  - Il preprocessing: 
-    - Hints: preprocessing/hints.md
-    - Questions: preprocessing/questions.md
-    - Update Columns Description: preprocessing/update_columns_description.md
-    - Run Preprocessing: preprocessing/run_preprocessing.md
-  - Il logging:
-    - Logfire: logging/logfire.md
-    - Log management: logging/log_management.md
-  - I commenti : comments.md
-  - Gli hints: hints.md
-  - Le questions: questions.md
-  - La Roadmap di Thoth: roadmap.md
+  - Install and Basic Setup: 
+    - Install:
+      - Getting Sources: 1-install_and_basic_setup/1.1-install/1.1.1-sources_cloning.md
+      - Docker Installation: 1-install_and_basic_setup/1.1-install/1.1.2-docker.md
+      - Local Installation: 1-install_and_basic_setup/1.1-install/1.1.3-local.md
+      - Basic Setup: 1-install_and_basic_setup/1.1-install/1.1.4-basic_setup.md/
+    - Backend setup:
+      - Groups and Users: 1-install_and_basic_setup/1.2-backend_setup/1.2.1-groups_and_users.md
+      - Databases Setup: 1-install_and_basic_setup/1.2-backend_setup/1.2.2-databases_setup.md
+      - Workspace Setup: 1-install_and_basic_setup/1.2-backend_setup/1.2.3-workspace_setup.md
+    - Preprocessing:
+      - Why Preprocessing?: 1-install_and_basic_setup/1.3-preprocessing/1.3.1-why_the_preprocessing.md
+      - Hints: 1-install_and_basic_setup/1.3-preprocessing/1.3.2-hints.md
+      - Questions: 1-install_and_basic_setup/1.3-preprocessing/1.3.3-questions.md
+      - Update Columns Description: 1-install_and_basic_setup/1.3-preprocessing/1.3.4-update_columns_description.md
+      - Run Preprocessing: 1-install_and_basic_setup/1.3-preprocessing/1.3.5-run_preprocessing.md
+  - Getting Started:
+      - Frontend Setup: 2-getting_started/2.1-front_end_setup.md
+      - Process Run: 2-getting_started/2.2-process_run.md
+  - Reference Manual:
+      - Setup:
+        - Setup Process: 3-reference_manual/3.1-setup/setup_process.md
+        - Authentication:
+          - Groups: 3-reference_manual/3.1-setup/3.1.1-authentication/3.1.1.1-groups.md
+          - Users: 3-reference_manual/3.1-setup/3.1.1-authentication/3.1.1.2-users.md
+          - Group profiles: 3-reference_manual/3.1-setup/3.1.1-authentication/3.1.1.3-group_profiles.md
+        - AI Models and Agents:
+          - Basic AI Models: 3-reference_manual/3.1-setup/3.1.2-AI_models_and_agents/3.1.2.1-basic_ai_models.md
+          - AI Models: 3-reference_manual/3.1-setup/3.1.2-AI_models_and_agents/3.1.2.2-ai_models.md
+          - Agents: 3-reference_manual/3.1-setup/3.1.2-AI_models_and_agents/3.1.2.3-agents.md
+        - SQL Database: 
+          - Sql dbs: 3-reference_manual/3.1-setup/3.1.3-SQL_database/3.1.3.1-sql_dbs.md
+          - Sql tables: 3-reference_manual/3.1-setup/3.1.3-SQL_database/3.1.3.2-sql_tables.md
+          - Sql columns: 3-reference_manual/3.1-setup/3.1.3-SQL_database/3.1.3.3-sql_columns.md
+          - Relationships: 3-reference_manual/3.1-setup/3.1.3-SQL_database/3.1.3.4-relationships.md
+        - Workflow: 
+          - Preliminary Steps: 3-reference_manual/3.2-workflow/3.2.1-preliminary_steps.md
+          - Main Workflow: 3-reference_manual/3.2-workflow/3.2.2-main_workflow.md
+          - Basic Generation Workflow: 3-reference_manual/3.2-workflow/3.2.3-basic_generation_workflow.md
+          - Titanic Generation Workflow: 3-reference_manual/3.2-workflow/3.2.4-titanic_generation_workflow.md
+          - Final Steps: 3-reference_manual/3.2-workflow/3.2.5-final_steps.md
+      - Logging:
+        - Logfire: 3-reference_manual/3.3-logging/3.3.1-logfire.md
+        - Log Management: 3-reference_manual/3.3-logging/3.3.2-log_management.md
+      - Comments: 3-reference_manual/3.4-comments.md
+      - Hints: 3-reference_manual/3.5-hints.md
+      - Questions: 3-reference_manual/3.6-questions.md
+      - Roadmap: 3-reference_manual/3.7-roadmap.md
 
 markdown_extensions:
   - attr_list
@@ -76,7 +92,6 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
-
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -87,5 +102,7 @@ extra:
       link: https://youtube.com/@tylconsulting
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/marcopancotti
+extra_javascript:
+  - https://unpkg.com/mermaid@10/dist/mermaid.min.js
 
 copyright: Copyright &copy; 2025 Marco Pancotti
