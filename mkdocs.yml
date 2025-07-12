@@ -25,28 +25,13 @@ theme:
     - content.code.copy
 nav:
   - Home: index.md
-  - Install and Basic Setup: 
-    - Install:
-      - Getting Sources: 1-install_and_basic_setup/1.1-install/1.1.1-sources_cloning.md
-      - Docker Installation: 1-install_and_basic_setup/1.1-install/1.1.2-docker.md
-      - Local Installation: 1-install_and_basic_setup/1.1-install/1.1.3-local.md
-      - Basic Setup: 1-install_and_basic_setup/1.1-install/1.1.4-basic_setup.md/
-    - Backend setup:
-      - Groups and Users: 1-install_and_basic_setup/1.2-backend_setup/1.2.1-groups_and_users.md
-      - Databases Setup: 1-install_and_basic_setup/1.2-backend_setup/1.2.2-databases_setup.md
-      - Workspace Setup: 1-install_and_basic_setup/1.2-backend_setup/1.2.3-workspace_setup.md
-    - Preprocessing:
-      - Why Preprocessing?: 1-install_and_basic_setup/1.3-preprocessing/1.3.1-why_the_preprocessing.md
-      - Hints: 1-install_and_basic_setup/1.3-preprocessing/1.3.2-hints.md
-      - Questions: 1-install_and_basic_setup/1.3-preprocessing/1.3.3-questions.md
-      - Update Columns Description: 1-install_and_basic_setup/1.3-preprocessing/1.3.4-update_columns_description.md
-      - Run Preprocessing: 1-install_and_basic_setup/1.3-preprocessing/1.3.5-run_preprocessing.md
-  - Getting Started:
-      - Frontend Setup: 2-getting_started/2.1-front_end_setup.md
-      - Process Run: 2-getting_started/2.2-process_run.md
+  - Install:
+      - Getting Sources: 1-install/1.1-sources_cloning.md
+      - Docker Installation: 1-install/1.2-docker.md
+      - Local Installation: 1-install/1.3-local.md
   - Reference Manual:
       - Setup:
-        - Setup Process: 3-reference_manual/3.1-setup/setup_process.md
+        - Setup Process: 3-reference_manual/3.1-setup/3.1.0-setup_process.md
         - Authentication:
           - Groups: 3-reference_manual/3.1-setup/3.1.1-authentication/3.1.1.1-groups.md
           - Users: 3-reference_manual/3.1-setup/3.1.1-authentication/3.1.1.2-users.md
@@ -60,19 +45,28 @@ nav:
           - Sql tables: 3-reference_manual/3.1-setup/3.1.3-SQL_database/3.1.3.2-sql_tables.md
           - Sql columns: 3-reference_manual/3.1-setup/3.1.3-SQL_database/3.1.3.3-sql_columns.md
           - Relationships: 3-reference_manual/3.1-setup/3.1.3-SQL_database/3.1.3.4-relationships.md
-        - Workflow: 
-          - Preliminary Steps: 3-reference_manual/3.2-workflow/3.2.1-preliminary_steps.md
-          - Main Workflow: 3-reference_manual/3.2-workflow/3.2.2-main_workflow.md
-          - Basic Generation Workflow: 3-reference_manual/3.2-workflow/3.2.3-basic_generation_workflow.md
-          - Titanic Generation Workflow: 3-reference_manual/3.2-workflow/3.2.4-titanic_generation_workflow.md
-          - Final Steps: 3-reference_manual/3.2-workflow/3.2.5-final_steps.md
+      - Preprocessing:
+          - Why Preprocessing?: 3-reference_manual/3.2-preprocessing/3.2.1-why_the_preprocessing.md
+          - Hints: 3-reference_manual/3.2-preprocessing/3.2.2-hints.md
+          - Questions: 3-reference_manual/3.2-preprocessing/3.2.3-questions.md
+          - Update Columns Description: 3-reference_manual/3.2-preprocessing/3.2.4-update_columns_description.md
+          - Run Preprocessing: 3-reference_manual/3.2-preprocessing/3.2.5-run_preprocessing.md
+      - Workflow:
+        - Preliminary Steps: 3-reference_manual/3.3-workflow/3.3.1-preliminary_steps.md
+        - Main Workflow: 3-reference_manual/3.3-workflow/3.3.2-main_workflow.md
+        - Basic Generation Workflow: 3-reference_manual/3.3-workflow/3.3.3-basic_generation_workflow.md
+        - Titanic Generation Workflow: 3-reference_manual/3.3-workflow/3.3.4-titanic_generation_workflow.md
+        - Final Steps: 3-reference_manual/3.3-workflow/3.3.5-final_steps.md
+
       - Logging:
-        - Logfire: 3-reference_manual/3.3-logging/3.3.1-logfire.md
-        - Log Management: 3-reference_manual/3.3-logging/3.3.2-log_management.md
-      - Comments: 3-reference_manual/3.4-comments.md
-      - Hints: 3-reference_manual/3.5-hints.md
-      - Questions: 3-reference_manual/3.6-questions.md
-      - Roadmap: 3-reference_manual/3.7-roadmap.md
+        - Logfire: 3-reference_manual/3.4-logging/3.4.1-logfire.md
+        - Log Management: 3-reference_manual/3.4-logging/3.4.2-log_management.md
+      - Comments: 3-reference_manual/3.5-comments.md
+      - Hints: 3-reference_manual/3.6-hints.md
+      - Questions: 3-reference_manual/3.7-questions.md
+      - Roadmap: 3-reference_manual/3.8-roadmap.md
+  - References: references.md
+  - LSH preprocessing: lsh_preprocessing.md
 
 markdown_extensions:
   - attr_list
