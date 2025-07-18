@@ -74,7 +74,7 @@ nav:
       - Questions: 3-user_manual/3.7-questions.md
       - Roadmap: 3-user_manual/3.8-roadmap.md
   - References: references.md
-  - LSH preprocessing: lsh_preprocessing.md
+  - LSH preprocessing: 4-reference_manual/4.7-lsh_preprocessing.md
   - Text-to-SQL: text-to-SQL.md
 
 markdown_extensions:
