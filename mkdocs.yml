@@ -32,7 +32,6 @@ nav:
       - Quick Setup: 1-install/1.4-quick_setup.md
   - Quick Start:
       - Frontend Quick Start: 2-quickstart/2.1-quickstart_frontend.md
-      - Logging Quick Start: 2-quickstart/2.2-quickstart_logging.md
   - Reference Manual:
       - Setup:
         - Setup Process: 3-user_manual/3.1-setup/3.1.0-setup_process.md
@@ -60,18 +59,18 @@ nav:
           - Update Columns Description: 3-user_manual/3.2-preprocessing/3.2.4-update_columns_description.md
           - Run Preprocessing: 3-user_manual/3.2-preprocessing/3.2.5-run_preprocessing.md
       - Workflow:
-        - Preliminary Steps: 3-user_manual/3.3-workflow/4.3.1-preliminary_steps.md
-        - Main Workflow: 3-user_manual/3.3-workflow/3.3.2-main_workflow.md
-        - Basic Generation Workflow: 3-user_manual/3.3-workflow/3.3.3-basic_generation_workflow.md
-        - Titanic Generation Workflow: 3-user_manual/3.3-workflow/3.3.4-titanic_generation_workflow.md
-        - Final Steps: 3-user_manual/3.3-workflow/3.3.5-final_steps.md
+        - Preliminary Steps: 4-reference_manual/4.3-workflow/4.3.1-preliminary_steps.md
+        - Main Workflow: 4-reference_manual/4.3-workflow/4.3.2-main_workflow.md
+        - Basic Generation Workflow: 4-reference_manual/4.3-workflow/4.3.3-basic_generation_workflow.md
+        - Titanic Generation Workflow: 4-reference_manual/4.3-workflow/4.3.4-titanic_generation_workflow.md
+        - Final Steps: 4-reference_manual/4.3-workflow/4.3.5-final_steps.md
 
       - Logging:
         - Logfire: 3-user_manual/3.4-logging/3.4.1-logfire.md
         - Log Management: 3-user_manual/3.4-logging/3.4.2-log_management.md
-      - Comments: 3-user_manual/3.5-comments.md
-      - Hints: 3-user_manual/3.6-hints.md
-      - Questions: 3-user_manual/3.7-questions.md
+      - Comments: 4-reference_manual/4.2-comments.md
+      - Hints: 4-reference_manual/4.4-hints.md
+      - Questions: 4-reference_manual/4.5-questions.md
       - Roadmap: 3-user_manual/3.8-roadmap.md
   - References: references.md
   - LSH preprocessing: 4-reference_manual/4.7-lsh_preprocessing.md

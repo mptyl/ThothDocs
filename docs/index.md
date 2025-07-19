@@ -35,7 +35,7 @@ Per poter utilizzare modelli piccoli, con una tecnica RAG, dallo schema totale v
 1. Seguire le [istruzioni di installazione](1-install/1.1-sources_cloning.md).
 2. Rendere confidenza con l'applicazione utilizzando il [Quick Start](2-quickstart/2.1-quickstart_frontend.md)
 3. Leggere la pagina dello **User Manual** dedicata a una [panoramica sul processo di setup](3-user_manual/3.1-setup/3.1.0-setup_process.md)
-4. Configurare l'applicazione configurando prima di tutto i propri [gruppi](3-user_manual/3.1-setup/3.1.1-authentication/3.1.1.1-groups.md) e i propri [utenti](3-user_manual/3.1-setup/3.1.1-authentication/)
+4. Configurare l'applicazione configurando prima di tutto i propri [gruppi](3-user_manual/3.1-setup/3.1.1-authentication/3.1.1.1-groups.md) e i propri [utenti](3-user_manual/3.1-setup/3.1.1-authentication/3.1.1.2-users.md/)
 5. Modificare, se necessario, la lista dei [modelli di AI](3-user_manual/3.1-setup/3.1.2-AI_models_and_agents/3.1.2.2-ai_models.md) (LLM) da utilizzare nell'esecuzione del processo
 6. Adeguare, se necessario, gli Agent configurandoli come descritto in [questa pagina](3-user_manual/3.1-setup/3.1.2-AI_models_and_agents/3.1.2.3-agents.md)
 7. Impostare il [database vettoriale](3-user_manual/3.1-setup/3.1.3-vector_database/3.1.3.1-vector_db.md) destinato a contenere i metadati del database relazionale da interrogare
@@ -55,7 +55,7 @@ La Roadmap di sviluppo di **ThothAI** è [qui descritta](3-user_manual/3.8-roadm
 La pagina sui [Riferimenti](references.md) raccoglie  i prodotti, gli studi e i papers che hanno ispirato **ThothAI**
 
 ## 5 - Il Reference Manual
-Approfondimenti tecnici sono disponibili nel [Reference Manual](4-reference_manual/4.1-reference_manual_map.mp)
+Approfondimenti tecnici sono disponibili nel [Reference Manual](4-reference_manual/4.1-reference_manual_map.md)
 
 ## 6 - Cos'e il Text-to-SQL
 Per approfondimento sulle tecniche raccolte sotto il nome `Text-to-SQL` leggere [questa pagina](text-to-SQL.md)
