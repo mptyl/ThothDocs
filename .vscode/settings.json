@@ -1,0 +1,13 @@
+{
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.venvPath": "${workspaceFolder}/.venv",
+    "python.pythonPath": "./.venv/bin/python",
+    "python.analysis.extraPaths": ["./.venv/lib/python3.13/site-packages"],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pylintPath": "./.venv/bin/pylint",
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "./.venv/bin/black"
+}
