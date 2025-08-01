@@ -27,6 +27,7 @@ nav:
   - Home: index.md
   - Install:
       - Getting Sources: 1-install/1.1-sources_cloning.md
+      - Interactive Installation: 1-install/1.15-interactive_installation.md
       - Docker Installation: 1-install/1.2-docker.md
       - Local Installation: 1-install/1.3-local.md
       - Quick Setup: 1-install/1.4-quick_setup.md
