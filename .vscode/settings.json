@@ -9,5 +9,8 @@
     "python.linting.pylintEnabled": true,
     "python.linting.pylintPath": "./.venv/bin/pylint",
     "python.formatting.provider": "black",
-    "python.formatting.blackPath": "./.venv/bin/black"
+    "python.formatting.blackPath": "./.venv/bin/black",
+    "cursorpyright.analysis.extraPaths": [
+        "./.venv/lib/python3.13/site-packages"
+    ]
 }
