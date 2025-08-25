@@ -1,5 +1,6 @@
 site_name: ThothAI Backend Documentation
 site_url: https://sitename.example
+dev_addr: 127.0.0.1:8300
 theme:
   name: material
   favicon: assets/favicon.ico
@@ -27,8 +28,8 @@ nav:
   - Home: index.md
   - Install:
       - Getting Sources: 1-install/1.1-sources_cloning.md
-      - Interactive Installation: 1-install/1.15-interactive_installation.md
-      - Docker Installation: 1-install/1.2-docker.md
+      - Interactive Installation: 1-install/1.2-interactive_installation.md
+      - Docker Installation: 1-install/1.21-docker.md
       - Local Installation: 1-install/1.3-local.md
       - Quick Setup: 1-install/1.4-quick_setup.md
   - Quick Start:
