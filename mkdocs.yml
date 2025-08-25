@@ -1,6 +1,6 @@
 site_name: ThothAI Backend Documentation
 site_url: https://sitename.example
-dev_addr: 127.0.0.1:8300
+dev_addr: 127.0.0.1:8199
 theme:
   name: material
   favicon: assets/favicon.ico

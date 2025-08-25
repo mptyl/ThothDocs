@@ -3,6 +3,13 @@
 Le applicazioni di questo tipo sono denominate `Text-to-SQL`.
 
 ![chat_home_page](assets/index_images/chat_home_page.png)
+_Figura 1 — Home di ThothAI._ Elementi principali:
+- barra laterale con selettore del Workspace e toggle: "Show SQL", "Explain SQL", "Treat void result as error";
+- collegamenti a "Settings", "About", "Documentation", "Admin", "Home";
+- area centrale con il benvenuto e le feature card;
+- campo di input in basso per porre le domande (prompt principale).
+
+Per un tour dell'interfaccia, vedere la [Guida al Frontend](3-user_manual/3.9-frontend.md).
 
 ThothAI è una libera rielaborazione di spunti, suggerimenti e codice pubblicati in papers scientifici o su GitHub da parte di ricercatori di tutto il mondo. 
 In particolare il processo seguito da ThothAI si basa principalmente sul framework CHESS, a cui va il mio speciale ringraziamento per la disponibilità a pubblicare prompts e codice a cui ThothAI ha attinto a mani basse. 
