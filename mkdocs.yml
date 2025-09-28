@@ -27,17 +27,16 @@ theme:
 nav:
   - Home: index.md
   - Install:
-      - Getting Sources: 1-install/1.1-sources_cloning.md
-      - Assisted DockerInstallation: 1-install/1.2-docker_assisted.md
-      - Manual Docker Installation: 1-install/1.3-docker_manual.md
-      - Local Installation: 1-install/1.4-local.md
-      - Quick Setup: 1-install/1.5-quick_setup.md
-  - Quick Start:
-      - Frontend Quick Start: 2-quickstart/2.1-quickstart_frontend.md
-  - Reference Manual:
+      - GettingSources: 1-install/1.1-sources_cloning.md
+      - DockerInstallation: 1-install/1.2-docker_assisted.md    
+      - LocalInstallation: 1-install/1.3-local.md
+      - QuickSetup: 1-install/1.4-quick_setup.md
+  - QuickStart:
+      - FrontendQuickStart: 2-quickstart/2.1-quickstart_frontend.md
+  - ReferenceManual:
       - Setup:
-        - Setup Process: 3-user_manual/3.1-setup/3.1.0-setup_process.md
-        - Common Setup Features: 3-user_manual/3.1-setup/3.1.01-common_setup.md
+        - SetupProcess: 3-user_manual/3.1-setup/3.1.0-setup_process.md
+        - CommonSetupFeatures: 3-user_manual/3.1-setup/3.1.01-common_setup.md
         - Authentication:
           - Groups: 3-user_manual/3.1-setup/3.1.1-authentication/3.1.1.1-groups.md
           - Users: 3-user_manual/3.1-setup/3.1.1-authentication/3.1.1.2-users.md
@@ -55,11 +54,11 @@ nav:
         - Settings:  3-user_manual/3.1-setup/3.1.5.1-settings.md
         - Workspaces: 3-user_manual/3.1-setup/3.1.6.1-workspaces.md
       - Preprocessing:
-          - Why Preprocessing?: 3-user_manual/3.2-preprocessing/3.2.1-why_the_preprocessing.md
+          - WhyPreprocessing: 3-user_manual/3.2-preprocessing/3.2.1-why_the_preprocessing.md
           - Hints: 3-user_manual/3.2-preprocessing/3.2.2-hints.md
           - Questions: 3-user_manual/3.2-preprocessing/3.2.3-questions.md
-          - Update Columns Description: 3-user_manual/3.2-preprocessing/3.2.4-update_columns_description.md
-          - Run Preprocessing: 3-user_manual/3.2-preprocessing/3.2.5-run_preprocessing.md
+          - UpdateColumnsDescription: 3-user_manual/3.2-preprocessing/3.2.4-update_columns_description.md
+          - RunPreprocessing: 3-user_manual/3.2-preprocessing/3.2.5-run_preprocessing.md
       - Workflow:
         - Preliminary Steps: 4-reference_manual/4.3-workflow/4.3.1-preliminary_steps.md
         - Main Workflow: 4-reference_manual/4.3-workflow/4.3.2-main_workflow.md
