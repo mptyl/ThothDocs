@@ -29,10 +29,14 @@ nav:
   - Docker Install:
       - Getting Sources: 1-docker_install/1.1-sources_cloning.md
       - Docker Assisted Installation: 1-docker_install/1.2-docker_assisted.md    
-      - Local Installation: 1-docker_install/1.3-docker_manual.md
-      - Quick Setup: 1-docker_install/1.4-quick_setup.md
-  - QuickStart:
-      - FrontendQuickStart: 2-quickstart/2.1-quickstart_frontend.md
+  - Local Install:
+      - Getting Sources: 2-local_install/2.1-sources_cloning.md
+      - Quick Setup: 2-local_install/2.2-local.md
+  - Quick Start:
+      - Quick Setup: 3-quickstart/3.1-quick_setup.md
+      - Frontend Quick Start: 3-quickstart/3.2-quickstart_frontend.md
+  - User Manual:
+      - 4-user_manual/4.1-setup/4.1.0-setup_process.md
   - ReferenceManual:
       - Setup:
         - SetupProcess: 3-user_manual/3.1-setup/3.1.0-setup_process.md
