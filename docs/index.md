@@ -9,7 +9,7 @@ _Figura 1 — Home di ThothAI._ Elementi principali:
 - area centrale con il benvenuto e le feature card;
 - campo di input in basso per porre le domande (prompt principale).
 
-Per un tour dell'interfaccia, vedere la [Guida al Frontend](3-user_manual/3.9-frontend.md).
+Per un tour dell'interfaccia, vedere la [Guida al Frontend](4-user_manual/4.5-frontend/4.5.1-frontend.md).
 
 ThothAI è una libera rielaborazione di spunti, suggerimenti e codice pubblicati in papers scientifici o su GitHub da parte di ricercatori di tutto il mondo. 
 In particolare il processo seguito da ThothAI si basa principalmente sul framework CHESS, a cui va il mio speciale ringraziamento per la disponibilità a pubblicare prompts e codice a cui ThothAI ha attinto a mani basse. 
@@ -53,18 +53,18 @@ In **ThothAI**, infatti, la generazione dello SQL avviene prima di tutto con un 
 Qualora questi non dovessero essere in grado di generare uno SQL considerato abbastanza valido dagli Agenti valutatori finali, il processo scala su LLM di tipo Advanced ed infine a LLM Expert, che possono essere basati sui modelli "reasoning" più potenti sul mercato. Quali modelli utilizzare come Basic, Advanced ed Expert è una scelta lasciata ai responsabili della configurazione di ThothAI, che si baseranno su considerazioni di trade-off tra efficacia e costo.
 
 ## 1 - Come utilizzare ThothAI
-1. Seguire le [istruzioni di installazione](1-install/1.1-sources_cloning.md).
-2. Prendere confidenza con l'applicazione utilizzando il [Quick Start](2-quickstart/2.1-quickstart_frontend.md)
-3. Leggere la pagina dello **User Manual** dedicata a una [panoramica sul processo di setup](3-user_manual/3.1-setup/3.1.0-setup_process.md)
-4. Configurare l'applicazione configurando prima di tutto i propri [gruppi](3-user_manual/3.1-setup/3.1.1-authentication/3.1.1.1-groups.md) e i propri [utenti](3-user_manual/3.1-setup/3.1.1-authentication/3.1.1.2-users.md)
-5. Modificare, se necessario, la lista dei [modelli di AI](3-user_manual/3.1-setup/3.1.2-AI_models_and_agents/3.1.2.2-ai_models.md) (LLM) da utilizzare nell'esecuzione del processo
-6. Adeguare, se necessario, gli Agent configurandoli come descritto in [questa pagina](3-user_manual/3.1-setup/3.1.2-AI_models_and_agents/3.1.2.3-agents.md)
-7. Impostare il [database vettoriale](3-user_manual/3.1-setup/3.1.3-vector_database/3.1.3.1-vector_db.md) destinato a contenere i metadati del database relazionale da interrogare
-8. Impostare i parametri per la [configurazione del database](3-user_manual/3.1-setup/3.1.4-SQL_database/3.1.4.1-sql_dbs.md) da interrogare e completarne la descrizione di dettaglio con tables, columns, relationships, commenti e scope
-9. Impostare un [Setting](3-user_manual/3.1-setup/3.1.0-setup_process.md) specifico per l'attività che si vuole condurre nel caso quello di Default non dovesse essere adeguato
-10. Impostare il [Workflow](3-user_manual/3.1-setup/3.1.6.1-workspaces.md) per connettere un insieme di utenti, un database da interrogare, un insieme di Agent da utilizzare e un Setting 
-11. Eseguire le attività di [Preprocessing](3-user_manual/3.2-preprocessing/3.2.1-why_the_preprocessing.md) del database 
-12. Andare sul frontend all'indirizzo [http://localhost:3001](http://localhost:3001) (porta 3000 se si sta lavorando in locale) e operare come indicato nelle seguenti brevi [istruzioni](3-user_manual/3.9-frontend.md)
+1. Seguire le [istruzioni di installazione](1-docker_install/1.1-sources_cloning.md).
+2. Prendere confidenza con l'applicazione utilizzando il [Quick Start](3-quickstart/3.2-quickstart_frontend.md)
+3. Leggere la pagina dello **User Manual** dedicata a una [panoramica sul processo di setup](4-user_manual/4.1-setup/4.1.1-setup_process/4.1.1.1-setup_process.md)
+4. Configurare l'applicazione configurando prima di tutto i propri [gruppi](4-user_manual/4.1-setup/4.1.4-authentication/4.1.4.1-groups.md) e i propri [utenti](4-user_manual/4.1-setup/4.1.4-authentication/4.1.4.2-users.md)
+5. Modificare, se necessario, la lista dei [modelli di AI](4-user_manual/4.1-setup/4.1.3-AI_models_and_agents/4.1.3.2-ai_models.md) (LLM) da utilizzare nell'esecuzione del processo
+6. Adeguare, se necessario, gli Agent configurandoli come descritto in [questa pagina](4-user_manual/4.1-setup/4.1.3-AI_models_and_agents/4.1.3.3-agents.md)
+7. Impostare il [database vettoriale](4-user_manual/4.1-setup/4.1.5-vector_database/4.1.5.1-vector_db.md) destinato a contenere i metadati del database relazionale da interrogare
+8. Impostare i parametri per la [configurazione del database](4-user_manual/4.1-setup/4.1.6-SQL_database/4.1.6.1-sql_dbs.md) da interrogare e completarne la descrizione di dettaglio con tables, columns, relationships, commenti e scope
+9. Impostare un [Setting](4-user_manual/4.1-setup/4.1.1-setup_process/4.1.1.1-setup_process.md) specifico per l'attività che si vuole condurre nel caso quello di Default non dovesse essere adeguato
+10. Impostare il [Workflow](4-user_manual/4.1-setup/4.1.7-workspaces/4.1.7.1-workspaces.md) per connettere un insieme di utenti, un database da interrogare, un insieme di Agent da utilizzare e un Setting 
+11. Eseguire le attività di [Preprocessing](4-user_manual/4.2-preprocessing/4.2.1-why_the_preprocessing.md) del database 
+12. Andare sul frontend all'indirizzo [http://localhost:3040](http://localhost:3040) e operare come indicato nelle seguenti brevi [istruzioni](4-user_manual/4.5-frontend/4.5.1-frontend.md)
 
 Il backend, oltre a configurare i Model e gli Agent, permette di:
 - leggere dal database che sarà oggetto di interrogazione in linguaggio naturale tutti gli elementi che ne costituiscono lo schema (tables, columns, PK, FK) al fine di avere una "fotografia" in ThothAI su cui lavorare
@@ -75,21 +75,20 @@ Il backend, oltre a configurare i Model e gli Agent, permette di:
 - generare un report riguardante i campi che, per nome e descrizione, contengono probabilmente dati "sensibili" ai fini del GDPR
 
 ## 2 - I log delle attività svolte
-Esaminare quanto indicato nella [pagina dedicata al Log Management](3-user_manual/3.4-logging/3.4.2-log_management.md)
+Esaminare quanto indicato nella [pagina dedicata al Log Management](4-user_manual/4.3-logging/4.3.2-log_management.md)
 
 ## 3 - La Roadmap
-La Roadmap di sviluppo di **ThothAI** è [qui descritta](3-user_manual/3.8-roadmap.md)
+La Roadmap di sviluppo di **ThothAI** è [qui descritta](4-user_manual/4.8-roadmap/4.8.1-roadmap.md)
 
 ## 4 - Riferimenti a prodotti e papers
 La pagina sui [Riferimenti](references.md) raccoglie  i prodotti, gli studi e i papers che hanno ispirato **ThothAI**
 
 ## 5 - Il Reference Manual
-Approfondimenti tecnici sono disponibili nel [Reference Manual](4-reference_manual/4.1-reference_manual_map.md)
+Approfondimenti tecnici sono disponibili nel [Reference Manual](5-reference_manual//5.1-reference_manual/5.1.1-reference_manual_map.md)
 
 ## 6 - Cos'è il Text-to-SQL
 Per approfondimento sulle tecniche raccolte sotto il nome `Text-to-SQL` leggere [questa pagina](text-to-SQL.md)
 
-## 7 - Cos'è il Locality-Sensitive Hashing (LSH)
-  
+ 
 
 
