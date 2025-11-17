@@ -1,72 +1,69 @@
 # Text-to-SQL
 
-## 1 - Cos'e il Text-to-SQL
-Il text-to-SQL e una tecnologia che permette di convertire automaticamente domande o richieste espresse in linguaggio naturale in query SQL strutturate.
-Questa tecnologia rappresenta un ponte tra l'utente finale e i database, eliminando la necessità di conoscere la sintassi SQL per interrogare i dati.
-Per approfondimenti sulle potenzialità e i limiti del text-to-SQL, vedere la [pagina specifica](text-to-SQL.md)
+## 1 - What is Text-to-SQL
+Text-to-SQL automatically converts natural-language questions or requests into structured SQL queries. It bridges the gap between end users and databases, removing the need to know SQL syntax to retrieve data. For more details about capabilities and limitations, see the [dedicated page](text-to-SQL.md).
 
-### 1.1 -  Caratteristiche fondamentali:
-1. Comprensione del linguaggio naturale: L'applicazione deve essere in grado di interpretare domande formulate nella lingua utilizzata dall'utente e comprenderne l'intento
-2. Mappatura semantica: Deve collegare i concetti espressi nel linguaggio naturale agli elementi del database (tabelle, colonne, relazioni)
-3. Generazione di SQL valido: Deve produrre query SQL sintatticamente corrette e semanticamente appropriate
-4. Gestione del contesto: Deve comprendere il dominio specifico e la struttura del database per fornire risultati accurati
+### 1.1 - Core characteristics
+1. Natural-language understanding: interpret user questions in the chosen language and capture intent.
+2. Semantic mapping: link natural-language concepts to database elements (tables, columns, relationships).
+3. Valid SQL generation: produce syntactically correct, semantically appropriate SQL.
+4. Context handling: understand the domain and database structure to deliver accurate answers.
 
-### 1.2 -  Vantaggi principali:
-- Permette a utenti non tecnici di interrogare database complessi anche quando non si hanno a disposizione strumenti di Business Intelligence predisposti allo scopo
-- Riduce il tempo necessario per formulare query complesse
-- Minimizza gli errori di sintassi SQL
-- Rende l'analisi dei dati accessibile a un pubblico piu ampio
+### 1.2 - Main benefits
+- Enables non-technical users to query complex databases even without BI tools.
+- Reduces the time needed to formulate complex queries.
+- Minimizes SQL syntax errors.
+- Makes data analysis accessible to a broader audience.
 
-## 2 - Le principali difficoltà del Text-to-SQL
+## 2 - Main challenges of Text-to-SQL
 
 Sebbene il `Text-to-SQL` sia una tecnologia promettente, per ottenere risultati soddisfacenti è necessario superare diverse difficoltà.
 
-### 2.1 Problemi di contesto e documentazione dello schema
+### 2.1 - Context and schema documentation issues
 
-**Documentazione insufficiente dello schema:** 
+**Insufficient schema documentation:** 
 
-- **Nomi dei campi poco descrittivi**: Spesso i database utilizzano abbreviazioni, codici o convenzioni di naming che non sono immediatamente comprensibili (es. "cd_cli" invece di "codice_cliente")
-- **Lingua non inglese**: Molti database sono progettati con nomi di tabelle e campi in lingue diverse dall'inglese, creando difficoltà per i modelli AI addestrati principalmente su testi inglesi
-- **Mancanza di commenti**: Assenza di documentazione tecnica che spieghi il significato e l'uso dei vari campi
-- **Terminologia specifica del dominio**: Presenza di "jargon" aziendale o settoriale che richiede conoscenze specifiche del contesto di business
-- **Relazioni implicite**: Mancanza di Foreign Keys esplicitamente definite, rendendo difficile comprendere le relazioni tra le tabelle
+- **Non-descriptive field names**: Databases often use abbreviations/codes that are unclear (e.g., `cd_cli` vs `customer_code`).
+- **Non-English language**: Tables/columns may be named in languages other than English, challenging AI models trained mostly on English.
+- **Missing comments**: No technical documentation explaining field meaning/usage.
+- **Domain-specific terminology**: Business jargon requiring specialized knowledge.
+- **Implicit relationships**: Lack of explicit foreign keys makes table relationships hard to infer.
 
-### 2.1 -  Limitazioni nella comprensione dei dati
+### 2.2 - Data understanding limitations
 
-**Mancanza di informazioni sui valori:**
+**Lack of value information:**
 
-- Assenza di esempi dei valori contenuti nei campi, che potrebbero aiutare a comprendere meglio il significato e l'uso delle colonne
-- Difficoltà nel comprendere i domini di valori possibili e le loro relazioni semantiche
+- Few or no sample values to illustrate column meaning.
+- Hard to understand possible value domains and semantic relationships.
 
-### 2.2 -  Problemi di scalabilità
+### 2.3 - Scalability problems
 
-**Dimensioni dello schema:**
+**Schema size:**
 
-- Database con molte tabelle e colonne possono "confondere" i modelli AI più piccoli
-- Difficoltà nel mantenere il contesto quando lo schema è molto ampio
-- Necessità di strategie di selezione intelligente delle tabelle rilevanti per una specifica query
+- Large schemas can overwhelm smaller AI models.
+- Hard to maintain context when many tables/columns exist.
+- Need for intelligent selection of relevant tables per query.
 
-### 2.3 - Sfide tecniche nella mappatura semantica
+### 2.4 - Technical challenges in semantic mapping
 
-**Ambiguità linguistica:**
+**Linguistic ambiguity:**
 
-- Una stessa richiesta in linguaggio naturale può essere interpretata in modi diversi
-- Difficoltà nel disambiguare termini che potrebbero riferirsi a più entità del database
+- A single question may have multiple interpretations.
+- Hard to disambiguate terms corresponding to multiple database entities.
 
-**Complessità delle query:**
+**Query complexity:**
 
-- Necessità di tradurre richieste complesse che coinvolgono aggregazioni, join multipli, subquery
-- Gestione di logiche condizionali articolate espresse in linguaggio naturale
+- Must handle complex requests with aggregations, multi-joins, subqueries.
+- Need to encode conditional logic expressed in natural language.
 
-### 2.4 -  Gestione del dominio specifico
+### 2.5 - Domain-specific management
 
-**Conoscenza del business:**
+**Business knowledge:**
 
-- Ogni settore ha le sue specificità e convenzioni che devono essere comprese dal sistema
-- Necessità di adattare l'interpretazione al contesto aziendale specifico
+- Each industry has its own conventions the system must understand.
+- Need to adapt interpretation to the specific business context.
 
-**Evoluzione del sistema:**
+**System evolution:**
 
-- I database cambiano nel tempo, richiedendo aggiornamenti continui della mappatura semantica
-- Necessità di mantenere coerenza tra le interpretazioni nel tempo
-- ,,,,,
+- Databases change over time, requiring continuous semantic updates.
+- Interpretations must remain consistent as the schema evolves.
